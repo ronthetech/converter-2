@@ -1,0 +1,27 @@
+.single-form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  background-color: #dfdfdf;
+  padding: 2rem 3rem;
+  margin: 3rem auto;
+  max-width: 40rem;
+}
+
+.col-header {
+  grid-row: 1;
+}
+
+.row-header {
+  grid-column: 1;
+}
+
+.input-group__input {
+  width: 4rem;
+}
+
+.button {
+  height: 2rem;
+  width: 6rem;
+  text-align: center;
+}
