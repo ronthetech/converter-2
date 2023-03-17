@@ -1,11 +1,11 @@
-.single-form {
+.form {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   background-color: #dfdfdf;
   padding: 2rem 3rem;
   margin: 3rem auto;
-  max-width: 40rem;
+  max-width: 45rem;
 }
 
 .col-header {
@@ -23,5 +23,7 @@
 .button {
   height: 2rem;
   width: 6rem;
+  border-radius: .25rem;
   text-align: center;
+  grid-column: 3;
 }
