@@ -10,10 +10,17 @@
 <body>
   <section>
     <h1>Prescription Calculator</h1>
-    <form class="single-form" id="single-form" action="">
-      <input type="radio" name="form-picker" id="form-picker__single" value="SingleVision">
-      <input type="radio" name="form-picker" id="form-picker__intermedia" value="Intermedia">
-      <h3 class="col-header"></h3>
+    <form class="form" id="form" action="">
+      <h3 class="col-header">
+          <div>
+            <label for="form-picker__single">Single Vision</label>
+            <input type="radio" name="form-picker" id="form-picker__single" value="SingleVision" checked>
+          </div>
+          <div>
+            <label for="form-picker__intermedia">Intermedia</label>
+            <input type="radio" name="form-picker" id="form-picker__intermedia" value="Intermedia">
+          </div>
+      </h3>
       <h3 class="col-header">Sphere</h3>
       <h3 class="col-header">Cylinder</h3>
       <h3 class="col-header">Axis</h3>
