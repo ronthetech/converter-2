@@ -27,7 +27,8 @@ function resultSingle(event) {
   event.preventDefault();
   let rightSphereResult = (Number(rightSphereInput1.value) + Number(rightAddInput1.value));
   let leftSphereResult = (Number(leftSphereInput1.value) + Number(leftAddInput1.value));
-  console.log(rightSphereResult, leftSphereResult);
+  console.log("Form 1 Results");
+  console.log("Right Sphere: " + rightSphereResult, "| Left Sphere: " + leftSphereResult);
 }
 
 formOne.addEventListener("submit", resultSingle);
@@ -38,8 +39,9 @@ function resultIntermedia(event) {
   let rightSphereResult = (Number(rightSphereInput2.value) + rightInterResult).toPrecision(3);
   let leftInterResult = (Number(leftAddInput2.value)/2);
   let leftSphereResult = (Number(leftSphereInput2.value) + leftInterResult).toPrecision(3);
-  console.log(rightInterResult,leftInterResult);
-  console.log(rightSphereResult, leftSphereResult);
+  // console.log(rightInterResult,leftInterResult);
+  console.log("Form 2 Results");
+  console.log("Right Sphere: " + rightSphereResult, "| Left Sphere: " + leftSphereResult);
 }
 
 formTwo.addEventListener("submit", resultIntermedia);
@@ -52,9 +54,10 @@ function resultNear(event) {
   let leftInterResult = (Number(leftAddInput3.value)/2);
   let leftSphereResult = (Number(leftSphereInput3.value) + leftInterResult);
   let leftNearResult = (Number(leftSphereInput3.value) + Number(leftAddInput3.value));
-  console.log(rightInterResult,leftInterResult);
-  console.log(rightSphereResult,leftSphereResult);
-  console.log(rightNearResult, leftNearResult);
+  // console.log(rightInterResult,leftInterResult);
+  // console.log(rightSphereResult,leftSphereResult);
+  console.log("Form 3 Results");
+  console.log("Right: " + rightNearResult, "| Left: " + leftNearResult);
 }
 
 formThree.addEventListener("submit", resultNear);
